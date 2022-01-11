@@ -1,0 +1,118 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    justify-content: center; 
+    background-color: #000000;
+    color: #9F4AE1;
+}
+
+main
+{
+    width: 1000px;
+    height: 100vh;
+}
+
+header h1
+{
+    color: #9F4AE1;
+    text-align: center;
+    margin: 15px;
+}
+
+#baner
+{
+    text-align: center;
+    position: relative;
+}
+
+#baner img
+{
+    width: 80%;
+    height: 250px;
+    border-radius: 6px;
+    object-fit: cover;
+    z-index: 0;
+}
+
+#baner blockquote
+{
+    font-size: 25px;
+    color: #fafafa;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    text-shadow: 2px 2px 0px #000;
+    position: absolute;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#baner blockquote :nth-child(2)
+{
+    font-size: 20px;
+}
+
+nav
+{
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    background-color: #9F4AE1;
+}
+
+nav ul
+{
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+nav ul li
+{
+    transition: 0.5s;
+}
+
+nav ul li:hover
+{
+    transform: scale(1.3);
+}
+
+
+
+
+
+
+
+
+
+
+footer
+{
+    height: 30px;
+    width: 100vw;
+    background-color: #55278F;
+    color: #9F4AE1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
