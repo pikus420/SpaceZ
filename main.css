@@ -137,13 +137,13 @@ nav ul li:hover
     grid-template-rows: 1fr 1fr;
     grid-gap: 20px;
     height: 500px;
+    width: 80vw;
 }
 
 .obraz
 {
     background-repeat: no-repeat;
     background-size: cover;
-    width: 300px;
 }
 
 .obraz:nth-child(1)
@@ -270,7 +270,6 @@ nav ul li:hover
 {
     width: 25%;
     height: 80%;
-    background-color: #9F4AE1;
 }
 
 .produkt img
@@ -373,10 +372,17 @@ footer
 
 @media screen and (max-width: 900px)
 {
+    main
+    {
+        width: 100vw;
+    }
+
+
     nav
     {
         display: none;
     }
+
 
     #burger
     {
@@ -439,17 +445,44 @@ footer
         transform: rotate(-45deg) translate(35px, 35px);
     }
 
-    /*
+    #kosmos
+    {
+        margin-top: 40px;
+        width: 100%;
+        height: 600px;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #kosmos > h2
+    {
+        width: 100%;
+    }
+
     #galeria
     {
-        grid-template-columns: 1fr 1fr;
-        height: initial;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        height: 500px;
+    }
+
+    .obraz:first-child
+    {
+        background-position: right;
     }
 
     .obraz:nth-child(3)
     {
-        grid-column: initial;
-        grid-row: initial;
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+    .obraz:nth-child(5)
+    {
+        grid-column: 1/3;
+        grid-row: 3/4;
     }
 
     header
@@ -467,8 +500,6 @@ footer
         width: 100%;
         height: 250px;
     }
-
-
     
     #artykuly > div
     {
@@ -476,6 +507,21 @@ footer
         grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-gap: 20px;
     }
-    */
 
+    #oferta
+    {
+        margin-top: 110px;
+    }
+
+    .produkt
+    {
+        width: 30%;
+        height: 50%;
+    }
+
+    footer p
+    {
+        width: 150px;
+        text-align: center;
+    }
 }
