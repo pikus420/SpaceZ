@@ -27,6 +27,11 @@ body
     color: #9F4AE1;
 }
 
+#burger
+{
+    display: none;
+}
+
 main
 {
     width: 1000px;
@@ -220,13 +225,13 @@ nav ul li:hover
     width: 50%;
     height: 80%;
     border-radius: 3px;
-    margin: 10px;
+    margin: 5px;
     
 }
 
 .artykul p
 {
-    max-width: 250px;
+    max-width: 200px;
 }
 
 #oferta
@@ -345,8 +350,6 @@ form
 }
 
 
-
-
 footer
 {
     height: 80px;
@@ -368,11 +371,72 @@ footer
 
 
 
-@media screen and (max-width: 800px)
+@media screen and (max-width: 900px)
 {
     nav
     {
         display: none;
+    }
+
+    #burger
+    {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        top: 0;
+        left: 0;
+        width: 80px;
+        height: 80px;
+        background-color: #55278F;
+    }
+
+    #burger_b
+    {
+        width: 50px;
+        height: 6px;
+        background-color: #9F4AE1;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #burger_b::before, #burger_b::after
+    {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 6px;
+        background: #9F4AE1;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #burger_b::before
+    {
+        transform: translateY(-16px); 
+    }
+
+    #burger_b::after
+    {
+        transform: translateY(16px); 
+    }
+
+    .opened #burger_b
+    {
+        transform: translateX(-50px);
+        background: transparent;
+    }
+
+    .opened #burger_b::before
+    {
+        transform: rotate(45deg) translate(35px, -35px);
+    }
+
+    .opened #burger_b::after
+    {
+        transform: rotate(-45deg) translate(35px, 35px);
     }
 
     /*
