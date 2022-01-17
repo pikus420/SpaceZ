@@ -44,13 +44,13 @@ header h1
     margin: 15px;
 }
 
-#baner
+.baner
 {
     text-align: center;
     position: relative;
 }
 
-#baner img
+.baner img
 {
     width: 80%;
     height: 250px;
@@ -59,7 +59,7 @@ header h1
     z-index: 0;
 }
 
-#baner blockquote
+.baner blockquote
 {
     font-size: 25px;
     color: #fafafa;
@@ -73,7 +73,7 @@ header h1
     margin-bottom: 0px;
 }
 
-#baner blockquote :nth-child(2)
+.baner blockquote :nth-child(2)
 {
     font-size: 20px;
 }
@@ -115,7 +115,7 @@ nav ul li:hover
     transform: scale(1.3);
 }
 
-#kosmos
+.kosmos
 {
     margin-top: 40px;
     width: 100%;
@@ -125,12 +125,12 @@ nav ul li:hover
     flex-wrap: wrap;
 }
 
-#kosmos > h2
+.kosmos > h2
 {
     width: 100%;
 }
 
-#galeria
+.galeria
 {
     margin: 0 auto;
     margin-top: 20px;
@@ -177,7 +177,7 @@ nav ul li:hover
 
 
 
-#artykuly
+.artykuly
 {
     margin-top: 40px;
     width: 100%;
@@ -187,12 +187,12 @@ nav ul li:hover
     flex-wrap: wrap;
 }
 
-#artykuly > h2
+.artykuly > h2
 {
     width: 100%;
 }
 
-#artykuly > div
+.artykuly > div
 {
     margin: 0 auto;
     margin-top: 20px;
@@ -236,7 +236,7 @@ nav ul li:hover
     max-width: 200px;
 }
 
-#oferta
+.oferta
 {
     margin-top: 20px;
     width: 100%;
@@ -246,19 +246,19 @@ nav ul li:hover
     flex-wrap: wrap;
 }
 
-#oferta > h2
+.oferta > h2
 {
     width: 100%;
 }
 
-#oferta > p
+.oferta > p
 {
     width: 100%;
     color: #fff;
     font-size: 1.2em;
 }
 
-#produkty
+.produkty
 {
     color: #fff;
     width: 100%;
@@ -281,7 +281,7 @@ nav ul li:hover
     margin-bottom: 10px;
 }
 
-#kontakt
+.kontakt
 {
     width: 100%;
     height: 400px;
@@ -290,12 +290,12 @@ nav ul li:hover
     text-align: center;
 }
 
-#kontakt h2
+.kontakt h2
 {
    margin-bottom: 50px;
 }
 
-#kontakt textarea
+.kontakt textarea
 {
     max-width: 400px;
     max-height: 100px;
@@ -305,7 +305,7 @@ nav ul li:hover
     color: white;
 }
 
-#kontakt textarea:focus
+.kontakt textarea:focus
 {
     border: 2px solid #9F4AE1;
     outline: none;
@@ -319,7 +319,7 @@ form
     gap: 30px;
 }
 
-#imie
+.imie
 {
     border: 2px dashed #55278F;;
     border-radius: 5px;
@@ -327,14 +327,14 @@ form
     color: white;
 }
 
-#imie:focus
+.imie:focus
 {
     border: 2px solid #9F4AE1;
     outline: none;
     transform: scale(1.1);
 }
 
-#wyslij
+.wyslij
 {
     background-color: #9F4AE1;
     border: 2px solid #55278F;
@@ -345,7 +345,7 @@ form
     transition: 0.5s;
 }
 
-#wyslij:hover
+.wyslij:hover
 {
     transform: scale(1.2);
 }
@@ -374,6 +374,12 @@ footer
 
 @media screen and (max-width: 900px)
 {
+    body
+    {
+        overflow-x: hidden;
+    }
+    
+
     main
     {
         width: 100vw;
@@ -444,7 +450,7 @@ footer
     #burger_b::after
     {
         transform: translateY(16px); 
-    }
+    } 
 
     .opened #burger_b
     {
@@ -462,7 +468,7 @@ footer
         transform: rotate(-45deg) translate(35px, 35px);
     }
 
-    #kosmos
+    .kosmos
     {
         margin-top: 40px;
         width: 100%;
@@ -472,12 +478,12 @@ footer
         flex-wrap: wrap;
     }
 
-    #kosmos > h2
+    .kosmos > h2
     {
         width: 100%;
     }
 
-    #galeria
+    .galeria
     {
         grid-template-columns:1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -507,23 +513,23 @@ footer
         width: 100vw;
         margin: 0;
     }
-    #baner
+    .baner
     {
         width: 100vw;
     }
 
-    #baner img
+    .baner img
     {
         width: 100%;
         height: 250px;
     }
 
-    #artykuly
+    .artykuly
     {
         height: auto;
     }
     
-    #artykuly > div
+    .artykuly > div
     {
         grid-template-columns:1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -531,12 +537,12 @@ footer
         height: auto;
     }
 
-    #oferta
+    .oferta
     {
         height: 1100px;
     }
 
-    #produkty
+    .produkty
     {
         height: 900px;
         flex-wrap: wrap;

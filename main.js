@@ -14,5 +14,8 @@ burger.addEventListener("click", ()=>{
         menu.style.display = "none"
         flag = false;
     }
+})
 
+window.addEventListener("resize", ()=>{
+    menu.style.display = "block"
 })
