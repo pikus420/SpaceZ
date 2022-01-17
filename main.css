@@ -84,6 +84,8 @@ nav
     width: 100%;
     height: 50px;
     background-color: #9F4AE1;
+    position: sticky;
+    top: 0;
 }
 
 nav ul
@@ -380,9 +382,23 @@ footer
 
     nav
     {
+        margin: 0;
         display: none;
+        position: fixed;
+        width: 150px;
+        height: 400px;
+        top: 80;
+        left: 0;
+        z-index: 5;
     }
 
+
+    nav ul
+    {
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
 
     #burger
     {
@@ -397,6 +413,7 @@ footer
         width: 80px;
         height: 80px;
         background-color: #55278F;
+        z-index: 5;
     }
 
     #burger_b
@@ -500,23 +517,40 @@ footer
         width: 100%;
         height: 250px;
     }
+
+    #artykuly
+    {
+        height: auto;
+    }
     
     #artykuly > div
     {
         grid-template-columns:1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-gap: 20px;
+        height: auto;
     }
 
     #oferta
     {
-        margin-top: 110px;
+        height: 1100px;
+    }
+
+    #produkty
+    {
+        height: 900px;
+        flex-wrap: wrap;
+    }
+
+    .produkt img
+    {
+        height: 80%;
     }
 
     .produkt
     {
-        width: 30%;
-        height: 50%;
+        width: 60vw;
+        height: 300px;
     }
 
     footer p
