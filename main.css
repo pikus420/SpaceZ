@@ -153,37 +153,19 @@ nav ul li:hover
 
 .obraz
 {
-    background-repeat: no-repeat;
-    background-size: cover;
+    overflow: hidden;
 }
-.obraz:nth-child(1)
+
+.obraz:last-child
 {
-    background-image: url("img/obraz1.jpg");
+    grid-column: 2/4;
 }
 
-.obraz:nth-child(2)
+.obraz img
 {
-    background-image: url("img/obraz2.jpg");
+    width: 100%;
+    height: 100%;
 }
-
-.obraz:nth-child(3)
-{
-    background-image: url("img/obraz3.jpg");
-    grid-column: 3/4;
-    grid-row: 1/3;
-}
-
-.obraz:nth-child(4)
-{
-    background-image: url("img/obraz4.jpg");
-}
-
-.obraz:nth-child(5)
-{
-    background-image: url("img/obraz5.jpg");
-}
-
-
 
 #artykuly
 {
