@@ -103,8 +103,16 @@
             <div class="formularz">
                 <h2>Kontakt</h2>
                 <form action="index.html" method="post">
-                    <input type="email" placeholder="example@mail.com" class="imie">
-                    <textarea rows="4" cols="33" placeholder="Wiadomość"></textarea>
+                    <input type="email" placeholder="example@mail.com" class="imie" required="required">
+                    <textarea rows="4" cols="33" placeholder="Wiadomość" required="required"></textarea>
+                    <div>
+                        <input type="checkbox" required="required" id="rodo">
+                        <label for="rodo">
+                            <span>Zgadzam się na przetwarzanie danych</span>
+                        </label>
+                       
+                    </div>
+                    
                     <input type="submit" value="Wyślij" class="wyslij">
                 </form>
             </div>
@@ -114,6 +122,7 @@
     <footer>
         <h2>SpaceZ</h2>
         <p>Strona stworzona przez Kacpra Mokrzyckiego</p>
+        <a href="mailto:k.mokrzycki.19d@gmail.com">k.mokrzycki.19d@gmail.com</a>
     </footer>
 
     <script src="main.js"></script>

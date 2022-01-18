@@ -17,5 +17,13 @@ burger.addEventListener("click", ()=>{
 })
 
 window.addEventListener("resize", ()=>{
-    menu.style.display = "block"
+    if(window.innerWidth > 900)
+        menu.style.display = "block"
+    else
+    {
+        menu.style.display = "none"
+        burger.classList.remove("opened")
+        flag = false;
+    }
+    
 })
